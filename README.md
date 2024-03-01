@@ -1,6 +1,6 @@
-[![pipeline status]()
-# Serverless Rust Microservice for Random Student Name Choosing
-This project aims to develop a serverless function on AWS Lambda utilizing Rust and Cargo Lambda, integrating with a database - AWS DynamoDB. This project focuses on leveraging AWS Lambda's capabilities, integrating with AWS API Gateway, and utilizing DynamoDB. The objective is to create a Lambda function capable of randoming choose a student by his/her name based on specific criteria, such as gender and major.
+[![pipeline status](https://gitlab.oit.duke.edu/hg163/score-percentile/-/pipelines/commits/main)
+# Serverless Rust Microservice for Score Percentile
+This project aims to develop a serverless function on AWS Lambda utilizing Rust and Cargo Lambda, integrating with a database - AWS DynamoDB. This project focuses on leveraging AWS Lambda's capabilities, integrating with AWS API Gateway, and utilizing DynamoDB. The objective is to create a Lambda function that can calculate the percentile rank of a given score among all scores.
 ## Goals
 * Create a Rust AWS Lambda function (or app runner)
 * Implement a simple service
@@ -31,7 +31,7 @@ export AWS_DEFAULT_REGION="your_preferred_region_here"
 * Navigate to the AWS console to establish a DynamoDB table. Click on the `Items` tab, then click on `Create item`.
 * Choose a name for your table. The name must align with that in your `main.rs` file.
 * Partition key: This is the primary key of your table.
-* Enter the details for your item, such as name, gender, and major, in the provided fields. Click Save to insert the item.
+* 'Explore table items' -> 'Create item' to insert the item.
 * Once the table is ready, proceed to link your Lambda function with AWS API Gateway.
 * Initiate a new API setup, opting for the default REST API option, and then create a new resource for your API's endpoint.
 * For the created resource, implement an `ANY` method and associate it with your Lambda function.
@@ -47,14 +47,14 @@ curl -X POST https://5eho0mtuof.execute-api.us-east-1.amazonaws.com/test/Student
 
 ## Screenshots
 * Curl request
-![curl]()
+![curl](Screenshots/curl.png)
 The function successfully randomly choose one student who satisfy the input criteria.
 
 * DynamoDB
-![DynamoDB]()
+![DynamoDB](Screenshots/DynamoDB.png)
 
 * Lambda
-![Lambda]()
+![Lambda](Screenshots/Lambda.png)
 
 
 
