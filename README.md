@@ -1,4 +1,3 @@
-[![pipeline status](https://gitlab.oit.duke.edu/hg163/score-percentile/-/pipelines/commits/main)
 # Serverless Rust Microservice for Score Percentile
 This project aims to develop a serverless function on AWS Lambda utilizing Rust and Cargo Lambda, integrating with a database - AWS DynamoDB. This project focuses on leveraging AWS Lambda's capabilities, integrating with AWS API Gateway, and utilizing DynamoDB. The objective is to create a Lambda function that can calculate the percentile rank of a given score among all scores.
 ## Goals
