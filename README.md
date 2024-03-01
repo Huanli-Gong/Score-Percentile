@@ -47,7 +47,6 @@ curl -X POST https://5eho0mtuof.execute-api.us-east-1.amazonaws.com/test/Student
 ## Screenshots
 * Curl request
 ![curl](Screenshots/curl.png)
-The function successfully randomly choose one student who satisfy the input criteria.
 
 * DynamoDB
 ![DynamoDB](Screenshots/DynamoDB.png)
